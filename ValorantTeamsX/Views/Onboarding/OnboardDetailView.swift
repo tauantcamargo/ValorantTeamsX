@@ -47,7 +47,15 @@ struct OnboardDetailView: View {
                 Button {
                     buttonAction()
                 } label: {
-                    Text(buttonLabel ?? "Continue")
+                    ZStack {
+                        RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
+                            .frame(height: 50)
+                            .shadow(radius: 8, x: 7, y: 7)
+                        Text(buttonLabel ?? "Continue")
+                            .bold()
+                            .foregroundStyle(color)
+                    }
+                    .padding()
                 }
                 
                 Spacer()
