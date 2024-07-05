@@ -16,6 +16,7 @@
 		9E722FEA2C389E6700FBF25D /* TeamSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E722FE92C389E6700FBF25D /* TeamSearch.swift */; };
 		9E722FED2C38A32600FBF25D /* TeamsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E722FEC2C38A32600FBF25D /* TeamsDataService.swift */; };
 		9E722FEF2C38A36500FBF25D /* TeamsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E722FEE2C38A36500FBF25D /* TeamsViewModel.swift */; };
+		9E722FF12C38B2F000FBF25D /* OnboardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E722FF02C38B2F000FBF25D /* OnboardDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		9E722FEB2C38A30100FBF25D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9E722FEC2C38A32600FBF25D /* TeamsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsDataService.swift; sourceTree = "<group>"; };
 		9E722FEE2C38A36500FBF25D /* TeamsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewModel.swift; sourceTree = "<group>"; };
+		9E722FF02C38B2F000FBF25D /* OnboardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 		9E722FE22C389B7400FBF25D /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				9E722FF02C38B2F000FBF25D /* OnboardDetailView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			files = (
 				9E722FE82C389DD500FBF25D /* PlayerSearch.swift in Sources */,
 				9E722FEF2C38A36500FBF25D /* TeamsViewModel.swift in Sources */,
+				9E722FF12C38B2F000FBF25D /* OnboardDetailView.swift in Sources */,
 				9E722FD22C3899CB00FBF25D /* HomeView.swift in Sources */,
 				9E722FD02C3899CB00FBF25D /* ValorantTeamsXApp.swift in Sources */,
 				9E722FED2C38A32600FBF25D /* TeamsDataService.swift in Sources */,
