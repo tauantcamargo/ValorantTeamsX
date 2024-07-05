@@ -1,5 +1,5 @@
 //
-//  TeamSearch.swift
+//  TeamsSearch.swift
 //  ValorantTeamsX
 //
 //  Created by Tauan Tathiell Camargo on 05/07/24.
@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct TeamSearch: Decodable {
+struct TeamsSearch: Decodable {
     var status: String?
     var region: String?
     var size: Int?
     var pagination: Pagination
-    var data: [TeamData] = [TeamData]()
+    var data: [TeamsData] = [TeamsData]()
 }
 
 struct Pagination: Decodable {
@@ -23,7 +23,7 @@ struct Pagination: Decodable {
     var hasNextPage: Bool?
 }
 
-struct TeamData: Decodable, Identifiable {
+struct TeamsData: Decodable, Identifiable {
     var id: String?
     var url: String?
     var name: String?
