@@ -8,17 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		9E722FD02C3899CB00FBF25D /* ValorantTeamsXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E722FCF2C3899CB00FBF25D /* ValorantTeamsXApp.swift */; };
-		9E722FD22C3899CB00FBF25D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E722FD12C3899CB00FBF25D /* ContentView.swift */; };
+		9E722FD22C3899CB00FBF25D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E722FD12C3899CB00FBF25D /* HomeView.swift */; };
 		9E722FD42C3899CC00FBF25D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E722FD32C3899CC00FBF25D /* Assets.xcassets */; };
 		9E722FD72C3899CC00FBF25D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E722FD62C3899CC00FBF25D /* Preview Assets.xcassets */; };
+		9E722FE62C389BA100FBF25D /* TeamSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E722FE52C389BA100FBF25D /* TeamSearch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9E722FCC2C3899CB00FBF25D /* ValorantTeamsX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValorantTeamsX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E722FCF2C3899CB00FBF25D /* ValorantTeamsXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValorantTeamsXApp.swift; sourceTree = "<group>"; };
-		9E722FD12C3899CB00FBF25D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9E722FD12C3899CB00FBF25D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		9E722FD32C3899CC00FBF25D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E722FD62C3899CC00FBF25D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9E722FE02C389A1C00FBF25D /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		9E722FE52C389BA100FBF25D /* TeamSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamSearch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +54,13 @@
 		9E722FCE2C3899CB00FBF25D /* ValorantTeamsX */ = {
 			isa = PBXGroup;
 			children = (
+				9E722FE12C389A6400FBF25D /* Views */,
+				9E722FDF2C3899FC00FBF25D /* Models */,
+				9E722FDE2C3899F400FBF25D /* ViewModels */,
+				9E722FDD2C3899E700FBF25D /* Services */,
 				9E722FCF2C3899CB00FBF25D /* ValorantTeamsXApp.swift */,
-				9E722FD12C3899CB00FBF25D /* ContentView.swift */,
+				9E722FD12C3899CB00FBF25D /* HomeView.swift */,
+				9E722FE02C389A1C00FBF25D /* Config.xcconfig */,
 				9E722FD32C3899CC00FBF25D /* Assets.xcassets */,
 				9E722FD52C3899CC00FBF25D /* Preview Content */,
 			);
@@ -65,6 +73,59 @@
 				9E722FD62C3899CC00FBF25D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9E722FDD2C3899E700FBF25D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9E722FDE2C3899F400FBF25D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9E722FDF2C3899FC00FBF25D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9E722FE52C389BA100FBF25D /* TeamSearch.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9E722FE12C389A6400FBF25D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9E722FE42C389B8200FBF25D /* Players */,
+				9E722FE32C389B7B00FBF25D /* Teams */,
+				9E722FE22C389B7400FBF25D /* Onboarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9E722FE22C389B7400FBF25D /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		9E722FE32C389B7B00FBF25D /* Teams */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Teams;
+			sourceTree = "<group>";
+		};
+		9E722FE42C389B8200FBF25D /* Players */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Players;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +198,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E722FD22C3899CB00FBF25D /* ContentView.swift in Sources */,
+				9E722FD22C3899CB00FBF25D /* HomeView.swift in Sources */,
 				9E722FD02C3899CB00FBF25D /* ValorantTeamsXApp.swift in Sources */,
+				9E722FE62C389BA100FBF25D /* TeamSearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

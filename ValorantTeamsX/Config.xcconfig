@@ -1,0 +1,10 @@
+//
+//  Config.xcconfig
+//  ValorantTeamsX
+//
+//  Created by Tauan Tathiell Camargo on 05/07/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+API_KEY=6bf6c3d25bmsh5babe6cc4023bd7p1d42d8jsn57aaa11bf7b8
