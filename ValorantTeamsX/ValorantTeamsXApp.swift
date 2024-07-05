@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct ValorantTeamsXApp: App {
+    @State var teamsViewModel = TeamsViewModel()
+    
     var body: some Scene {
         WindowGroup {
             HomeView()
+                .environment(teamsViewModel)
+                .onAppear {
+                    teamsViewModel.getTeams()
+                }
         }
     }
 }

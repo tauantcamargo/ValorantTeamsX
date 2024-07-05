@@ -14,6 +14,8 @@
 		9E722FE62C389BA100FBF25D /* TeamsSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E722FE52C389BA100FBF25D /* TeamsSearch.swift */; };
 		9E722FE82C389DD500FBF25D /* PlayerSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E722FE72C389DD500FBF25D /* PlayerSearch.swift */; };
 		9E722FEA2C389E6700FBF25D /* TeamSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E722FE92C389E6700FBF25D /* TeamSearch.swift */; };
+		9E722FED2C38A32600FBF25D /* TeamsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E722FEC2C38A32600FBF25D /* TeamsDataService.swift */; };
+		9E722FEF2C38A36500FBF25D /* TeamsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E722FEE2C38A36500FBF25D /* TeamsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		9E722FE52C389BA100FBF25D /* TeamsSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsSearch.swift; sourceTree = "<group>"; };
 		9E722FE72C389DD500FBF25D /* PlayerSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSearch.swift; sourceTree = "<group>"; };
 		9E722FE92C389E6700FBF25D /* TeamSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamSearch.swift; sourceTree = "<group>"; };
+		9E722FEB2C38A30100FBF25D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9E722FEC2C38A32600FBF25D /* TeamsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsDataService.swift; sourceTree = "<group>"; };
+		9E722FEE2C38A36500FBF25D /* TeamsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 		9E722FCE2C3899CB00FBF25D /* ValorantTeamsX */ = {
 			isa = PBXGroup;
 			children = (
+				9E722FEB2C38A30100FBF25D /* Info.plist */,
 				9E722FE12C389A6400FBF25D /* Views */,
 				9E722FDF2C3899FC00FBF25D /* Models */,
 				9E722FDE2C3899F400FBF25D /* ViewModels */,
@@ -82,6 +88,7 @@
 		9E722FDD2C3899E700FBF25D /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				9E722FEC2C38A32600FBF25D /* TeamsDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -89,6 +96,7 @@
 		9E722FDE2C3899F400FBF25D /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				9E722FEE2C38A36500FBF25D /* TeamsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -205,8 +213,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E722FE82C389DD500FBF25D /* PlayerSearch.swift in Sources */,
+				9E722FEF2C38A36500FBF25D /* TeamsViewModel.swift in Sources */,
 				9E722FD22C3899CB00FBF25D /* HomeView.swift in Sources */,
 				9E722FD02C3899CB00FBF25D /* ValorantTeamsXApp.swift in Sources */,
+				9E722FED2C38A32600FBF25D /* TeamsDataService.swift in Sources */,
 				9E722FEA2C389E6700FBF25D /* TeamSearch.swift in Sources */,
 				9E722FE62C389BA100FBF25D /* TeamsSearch.swift in Sources */,
 			);
@@ -217,6 +227,7 @@
 /* Begin XCBuildConfiguration section */
 		9E722FD82C3899CC00FBF25D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E722FE02C389A1C00FBF25D /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -280,6 +291,7 @@
 		};
 		9E722FD92C3899CC00FBF25D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E722FE02C389A1C00FBF25D /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -345,6 +357,7 @@
 				DEVELOPMENT_TEAM = LTW8V26RS8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ValorantTeamsX/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -374,6 +387,7 @@
 				DEVELOPMENT_TEAM = LTW8V26RS8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ValorantTeamsX/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

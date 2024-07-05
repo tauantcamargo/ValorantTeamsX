@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
+    @Environment(TeamsViewModel.self) var teamsViewModel
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -21,4 +23,5 @@ struct HomeView: View {
 
 #Preview {
     HomeView()
+        .environment(TeamsViewModel())
 }
