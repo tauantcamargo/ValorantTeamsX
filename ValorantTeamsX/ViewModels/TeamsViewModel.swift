@@ -12,9 +12,11 @@ import SwiftUI
 class TeamsViewModel {
     var teamsDataService = TeamsDataService()
     
+    var teams: [TeamsData] = [TeamsData]()
+    
     func getTeams() {
         Task {
-            await teamsDataService.teamsSearch()
+            teams = await teamsDataService.teamsSearch()
         }
     }
 }
