@@ -11,13 +11,13 @@ struct TeamsSearch: Decodable {
     var status: String?
     var region: String?
     var size: Int?
-    var pagination: Pagination
+    var pagination: Pagination?
     var data: [TeamsData] = [TeamsData]()
 }
 
 struct Pagination: Decodable {
     var page: Int?
-    var limt: String?
+    var limit: String?
     var totalElements: Int?
     var totalPages: Int?
     var hasNextPage: Bool?

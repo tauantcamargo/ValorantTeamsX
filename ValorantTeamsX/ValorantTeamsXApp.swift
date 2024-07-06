@@ -22,7 +22,7 @@ struct ValorantTeamsXApp: App {
                         OnboardView()
                 }
                 .onAppear {
-                    teamsViewModel.getTeams()
+                    teamsViewModel.getTeams(region: nil, limit: 50)
                 }
         }
     }

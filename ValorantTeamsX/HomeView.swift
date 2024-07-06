@@ -9,39 +9,28 @@ import SwiftUI
 
 struct HomeView: View {
     @Environment(TeamsViewModel.self) var teamsViewModel
-    @State var queryTeam = ""
     
     var body: some View {
-        VStack {
-            HStack {
-                TextField("Search for you favorite team...", text: $queryTeam)
-                    .textFieldStyle(.roundedBorder)
-                Button {
-                    
-                } label: {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 10)
-                            .foregroundStyle(.mint)
-                        Image(systemName: "magnifyingglass")
+        TabView {
+            TeamsView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "person.3.fill")
+                        Text("Teams")
                     }
-                    .frame(width: 50, height: 35)
+                    .foregroundStyle(.mint)
                 }
-            }
             
-            List {
-                ForEach(teamsViewModel.teams, id: \.id) { team in
-                    VStack(spacing: 20) {
-                        TeamListItemView(teamData: team)
-                        Divider()
+            PlayersView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "person.badge.shield.checkmark")
+                        Text("Players")
                     }
+                    .foregroundStyle(.mint)
                 }
-                .listRowSeparator(.hidden)
-            }
-            .listStyle(.plain)
         }
-        .padding(.top, 80)
-        .padding(.horizontal, 10)
-        .ignoresSafeArea()
+        .accentColor(.mint)
     }
 }
 

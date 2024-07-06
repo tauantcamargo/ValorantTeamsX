@@ -13,10 +13,19 @@ class TeamsViewModel {
     var teamsDataService = TeamsDataService()
     
     var teams: [TeamsData] = [TeamsData]()
+    var teamSelected: TeamsData?
     
-    func getTeams() {
+    var team: TeamData?
+    
+    func getTeams(region: String?, limit: Int?) {
         Task {
-            teams = await teamsDataService.teamsSearch()
+            teams = await teamsDataService.teamsSearch(region: region, limit: limit)
+        }
+    }
+    
+    func getTeamById(id: String) {
+        Task {
+            team = await teamsDataService.teamSearch(id: id)
         }
     }
 }

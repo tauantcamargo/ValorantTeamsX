@@ -15,7 +15,7 @@ struct TeamSearch: Decodable {
 struct TeamData: Decodable {
     var info: TeamInfo?
     var players: [PlayersData] = [PlayersData]()
-    var staf: [StaffsData] = [StaffsData]()
+    var staff: [StaffsData] = [StaffsData]()
     var inactive: [String] = [String]()
     var events: [EventsData] = [EventsData]()
     var results: [ResultsData] = [ResultsData]()

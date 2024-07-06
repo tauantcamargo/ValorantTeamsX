@@ -19,6 +19,9 @@
 		9E722FF12C38B2F000FBF25D /* OnboardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E722FF02C38B2F000FBF25D /* OnboardDetailView.swift */; };
 		9E722FF32C38B73600FBF25D /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E722FF22C38B73600FBF25D /* OnboardView.swift */; };
 		9E722FF52C38BFA700FBF25D /* TeamListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E722FF42C38BFA700FBF25D /* TeamListItemView.swift */; };
+		9E722FF72C38C3F000FBF25D /* TeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E722FF62C38C3F000FBF25D /* TeamsView.swift */; };
+		9E722FF92C38C51B00FBF25D /* PlayersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E722FF82C38C51B00FBF25D /* PlayersView.swift */; };
+		9E722FFB2C38C7F700FBF25D /* TeamDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E722FFA2C38C7F700FBF25D /* TeamDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		9E722FF02C38B2F000FBF25D /* OnboardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardDetailView.swift; sourceTree = "<group>"; };
 		9E722FF22C38B73600FBF25D /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
 		9E722FF42C38BFA700FBF25D /* TeamListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListItemView.swift; sourceTree = "<group>"; };
+		9E722FF62C38C3F000FBF25D /* TeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsView.swift; sourceTree = "<group>"; };
+		9E722FF82C38C51B00FBF25D /* PlayersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersView.swift; sourceTree = "<group>"; };
+		9E722FFA2C38C7F700FBF25D /* TeamDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				9E722FF42C38BFA700FBF25D /* TeamListItemView.swift */,
+				9E722FF62C38C3F000FBF25D /* TeamsView.swift */,
+				9E722FFA2C38C7F700FBF25D /* TeamDetailView.swift */,
 			);
 			path = Teams;
 			sourceTree = "<group>";
@@ -147,6 +155,7 @@
 		9E722FE42C389B8200FBF25D /* Players */ = {
 			isa = PBXGroup;
 			children = (
+				9E722FF82C38C51B00FBF25D /* PlayersView.swift */,
 			);
 			path = Players;
 			sourceTree = "<group>";
@@ -228,9 +237,12 @@
 				9E722FD22C3899CB00FBF25D /* HomeView.swift in Sources */,
 				9E722FD02C3899CB00FBF25D /* ValorantTeamsXApp.swift in Sources */,
 				9E722FF52C38BFA700FBF25D /* TeamListItemView.swift in Sources */,
+				9E722FF72C38C3F000FBF25D /* TeamsView.swift in Sources */,
 				9E722FED2C38A32600FBF25D /* TeamsDataService.swift in Sources */,
 				9E722FEA2C389E6700FBF25D /* TeamSearch.swift in Sources */,
 				9E722FE62C389BA100FBF25D /* TeamsSearch.swift in Sources */,
+				9E722FFB2C38C7F700FBF25D /* TeamDetailView.swift in Sources */,
+				9E722FF92C38C51B00FBF25D /* PlayersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
